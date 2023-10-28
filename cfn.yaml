@@ -38,7 +38,7 @@ Resources:
         wget -P templates https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/templates/index.html
         wget -P templates https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/templates/result.html
         wget https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/app.py
-
+        python3 app.py
   mySecGrp:
     Type: AWS::EC2::SecurityGroup
     Properties:
