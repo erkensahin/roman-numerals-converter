@@ -13,7 +13,7 @@ Parameters:
   keyName:
     Description: Chose your key pair
     Type: AWS::EC2::KeyPair::KeyName
-    Default: ottoaws9
+    Default: firstkey
 
 Resources:
   myWebServer:
@@ -35,10 +35,9 @@ Resources:
         pip3 install flask
         yum install git -y
         cd /home/ec2-user
-        wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/index.html
-        wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/result.html
-        wget https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/app.py
-        python3 app.py
+        wget -P templates https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/templates/index.html
+        wget -P templates https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/templates/result.html
+        wget https://raw.githubusercontent.com/erkensahin/roman-numerals-converter/main/app.py
 
   mySecGrp:
     Type: AWS::EC2::SecurityGroup
